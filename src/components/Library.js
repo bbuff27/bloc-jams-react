@@ -9,9 +9,9 @@ class Library extends Component{
     super(props);
     this.state = { albums:albumData };
   }
-  render(){
+  render() {
     return (
-      <section className = "library">
+      <section className="library">
         {
           this.state.albums.map( (album,index) =>
           <Link to={`/album/${album.slug}`} key={index}>
