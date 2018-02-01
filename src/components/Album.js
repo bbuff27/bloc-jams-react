@@ -58,7 +58,7 @@ class Album extends Component {
   }
 
   handleSongClick(song){
-    const isSameSong = this.state.currentSong === true;
+    const isSameSong = this.state.currentSong === song;
     if(this.state.isPlaying && isSameSong) {
       this.pause();
     } else {
