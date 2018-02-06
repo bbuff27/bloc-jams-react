@@ -1,3 +1,20 @@
-section{
+.album-cover{
+    margin-top: 2rem;
+    width: 250px;
+    max-width: 45%;
+}
 
+.album-title{
+    font-size: 2rem;
+}
+
+.album-artist{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.album-info{
+    margin-top: 0.25rem;
+    font-weight: 400;
 }

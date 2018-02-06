@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { Route, Link } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 import './App.css';
 import Landing from './components/Landing.js';
 import Library from './components/Library.js';
@@ -12,8 +12,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <nav>
-            <Link to="/">Landing</Link>
-            <Link to="/library">Library</Link>
+            <NavLink 
+            to="/"
+            activeStyle={{
+              padding: "16px",
+            }}
+            >Landing</NavLink>
+            <NavLink 
+            to="/library"
+            >Library</NavLink>
           </nav>
           <h1>Bloc Jams</h1>
         </header>
