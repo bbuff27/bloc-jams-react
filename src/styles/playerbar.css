@@ -43,11 +43,11 @@
   display: none;
 }
 
-#play-pause[isPlaying="playing"] .ion-pause {
+#play-pause[isPlaying=true] .ion-pause {
   display: block;
 }
 
-#play-pause[isPlaying="playing"] .ion-play {
+#play-pause[isPlaying=true] .ion-play {
   display: none;
 }
 
@@ -58,12 +58,10 @@
 
 #time-control {
   margin: 0.5rem auto;
-  /* max-width: 640px; */
   width: 50%;
 } 
 
-#time-control div,
-#volume-control div {
+#time-control div, #volume-control div {
   font-size: 0.8rem;
   color: hsla(0, 0%, 100%, 0.4);
   width: 35px;
@@ -72,18 +70,11 @@
   text-align: center;
 }
 
-
 #volume-control {
   transform: translateY(-50%);
-  top: 90%;
-  position: fixed;
+  position: inherit;
   right: 2rem;
   width: 15%;
-}
-
-#volume-control input {
-  float: left;
-  width: calc(100% - 40px);
 }
 
 input[type=range] {
