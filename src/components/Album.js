@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums.js';
 import PlayerBar from './PlayerBar';
+import './../styles/album.css';
 
 class Album extends Component {
 
@@ -128,8 +129,11 @@ class Album extends Component {
                 <td className="song-actions">
                   <button>
                     <span className="song-number">{ index+1 }</span>
-                    <span className="ion-play"></span>
-                    <span className="ion-pause"></span>
+                    {
+                      this.state.isPlaying === true 
+                      ? <span className="ion-pause"></span>
+                      : <span className="ion-play"></span>
+                    }
                   </button>
                 </td>
                 <td className="song-title">{ song.title }</td>
