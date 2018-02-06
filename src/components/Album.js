@@ -59,7 +59,7 @@ class Album extends Component {
   }
 
   handleSongClick(song){
-    const isSameSong = this.state.currentSong === true;
+    const isSameSong = this.state.currentSong === song;
     if(this.state.isPlaying && isSameSong) {
       this.pause();
     } else {
@@ -130,9 +130,9 @@ class Album extends Component {
                   <button>
                     <span className="song-number">{ index+1 }</span>
                     {
-                      this.state.isPlaying === false 
-                      ? <span className="ion-play"></span>
-                      : <span className="ion-pause"></span>
+                      this.state.isPlaying === true 
+                      ? <span className="ion-pause"></span>
+                      : <span className="ion-play"></span>
                     }
                   </button>
                 </td>
