@@ -31,7 +31,7 @@ tr:focus {
 }
 
 tr:hover .ion-play,
-tr.playing .ion-pause,
+tr:hover .ion-pause,
 tr.paused .ion-play {
   display: block;
 }
@@ -51,7 +51,7 @@ tr:hover {
   cursor: pointer;
 }
 
-tr.playing {
+tr {
   background: hsla(0, 0%, 0%, 0.1);
 }
 
@@ -87,12 +87,12 @@ tr button:focus .ion-play {
   display: block;
 }
 
-tr.playing button:focus .song-number,
-tr.playing button:focus .ion-play {
+tr button:focus .song-number,
+tr button:focus .ion-play {
   display: none;
 }
 
-tr.playing button:focus .ion-pause {
+tr button:focus .ion-pause {
   display: block;
 }
 
