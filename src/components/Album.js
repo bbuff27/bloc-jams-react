@@ -130,15 +130,9 @@ class Album extends Component {
                   <button>
                     <span className="song-number">{ index+1 }</span>
                     {
-<<<<<<< HEAD
                       this.state.isPlaying === true 
                       ? <span className="ion-pause"></span>
                       : <span className="ion-play"></span>
-=======
-                      this.state.isPlaying === false 
-                      ? <span className="ion-play"></span>
-                      : <span className="ion-pause"></span>
->>>>>>> 40c9ef3ba8ea110596580679558296d84d3fd9c4
                     }
                   </button>
                 </td>
